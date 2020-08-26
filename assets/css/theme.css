@@ -30,7 +30,7 @@
 .branding{background: #000;}
 
 .inicio{
-    height:75vh;
+    height:100vh;
 }
 
 .contenedor-cta{
@@ -55,7 +55,7 @@
 
 @media (max-width:2560px){
     .img-fluid {
-        width: 45vh;
+        width: 40vh;
         height: auto;
     }
 }
