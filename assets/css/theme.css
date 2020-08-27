@@ -59,7 +59,11 @@
         height: auto;
     }
 }
-
+@media (max-width:1440px){
+    .img-fluid {
+        width: 30vh;
+        height: auto;
+    }
 @media (max-width:1192px){
     .img-fluid {
         width: 45vh;
