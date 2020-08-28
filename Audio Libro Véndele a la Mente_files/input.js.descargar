@@ -1,0 +1,76 @@
+
+
+
+jQuery( document ).ready(function() {
+
+	if (document.querySelector(".elementor-form input#form-field-phone")) {
+
+		jQuery("input#form-field-phone").attr("name","telefonazo");
+		var input = document.querySelector("input[name=telefonazo]");
+		window.intlTelInput(input, {
+		  initialCountry: "auto",
+		  separateDialCode: false,
+		  autoHideDialCode: false,
+		  hiddenInput: "form_fields[nombre]",
+		  preferredCountries: ["mx", "us", "co", "pe", "ec", "ar"],
+		  geoIpLookup: function(callback) {
+		    jQuery.get('https://reallyfreegeoip.org/json/', function() {}, "jsonp").always(function(resp) {
+		      var countryCode = (resp && resp.country_code) ? resp.country_code : "";
+		      callback(countryCode);
+		    });
+		  },
+		  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/js/utils.js"
+		});
+
+	}
+
+
+});
+
+jQuery(window).load(function() {
+
+
+	
+
+setTimeout(function(){ 
+
+
+// crea form container base
+jQuery(".hbspt-form").parent().prepend('<div class="formPapa">hello</div>')
+
+//jala el html del iframe hs
+jQuery(".formPapa").html(jQuery("#hs-form-iframe-0").contents().find("html").html());
+jQuery(".formPapa").append("<div class='securedata'>Tu información esta 100% protegida</div>");
+//borra marca agua hs
+jQuery(".hubspot-link__container.sproket").remove();
+
+
+	//validamos si existe el field
+	if (document.querySelector("input[name=phone]")) {
+
+		//le cambiamos name
+		jQuery("input[name=phone]").attr("name","telefonazo");
+
+		//inicializa sobre el field cambiado y dejamos el original para ponerle el codigo
+		var input = document.querySelector("input[name=telefonazo]");
+		window.intlTelInput(input, {
+		  initialCountry: "auto",
+		  separateDialCode: false,
+		  autoHideDialCode: false,
+		  hiddenInput: "phone",
+		  preferredCountries: ["mx", "us", "co", "pe", "ec", "ar"],
+		  geoIpLookup: function(callback) {
+		    jQuery.get('https://reallyfreegeoip.org/json/', function() {}, "jsonp").always(function(resp) {
+		      var countryCode = (resp && resp.country_code) ? resp.country_code : "";
+		      callback(countryCode);
+		    });
+		  },
+		  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/js/utils.js"
+		});
+
+	}
+}, 1500);
+
+//great success b1tches
+});
+

@@ -1,0 +1,68 @@
+.hbspt-form input {
+	width: 100%;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.hbspt-form label {
+	color: white;
+	font-size: 14px;
+}
+
+ul.hs-error-msgs.inputs-list {
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.hs_submit.hs-submit {
+    margin: 20px 0;
+}
+
+.hbspt-form > form.hs-form > div.field {
+	margin-bottom: 10px;
+}
+.intl-tel-input.allow-dropdown {
+	width: 100%;
+}
+
+.iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/img/flags.png");}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti-flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/14.0.6/img/flags@2x.png");}
+}
+
+#hs-form-iframe-0 {
+	display: none !important;
+}
+
+.hs-submit .hs-button {
+	    background: #fee74c !important;
+    color: black !important;
+    text-transform: uppercase;
+    padding: 15px 20px;
+}
+
+.hs-form-field input[type="text"], .hs-form-field input[type="email"], .hs-form-field input[type="phone"], .hs-form-field input[type="number"], .hs-form-field input[type="tel"], .hs-form-field input[type="date"], .hs-form-field textarea {
+
+    border-radius: 5px !important; 
+}
+
+.hs_submit .actions {
+	padding:0 ;
+}
+
+.hbspt-form label {
+	display: none;
+}
+
+.securedata {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+::placeholder {
+	color: #333 !important;
+};
