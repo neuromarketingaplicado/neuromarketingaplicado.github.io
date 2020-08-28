@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Aumenta tus ventas con estos 7 consejos de neuromarketing">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	
     
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Roboto:400,400i,700&display=swap" rel="stylesheet">
@@ -74,7 +76,7 @@
 			<h1 class="titulo mb-3 text-center">
 				DESCUBRE COMO VENDER MAS CON ESTOS 7 CONSEJOS DE NEUROMARKETING
 			</h1><!--//headline-->
-			<div class="mb-1 text-center subtitulo">
+			<div  class="mb-1 text-center subtitulo">
 				Aprende como <b>FUNCIONA</b>  las mente y sentimiento de tus clientes para conseguir más <b>VENTAS</b>
 			</div><!--//subheading-->
 
@@ -90,8 +92,8 @@
 		</div><!--//container-->
 		<p class="sub-cta" style="text-align: center;">E-book Gratis, por tiempo limitado 👇🏻</p>
 		
-		<div class="contenedor-cta py-3">
-			<a class="btn btn-warning" style="color:#fff;" href="#">CONSEGUIR eBOOK AHORA »</a>
+		<div id="ccta" class="contenedor-cta py-3">
+			<button id="btn-abrir-popup" class="btn btn-warning btn-abrir-popup" style="color:#fff;">CONSEGUIR eBOOK AHORA »</button>
 		</div>
     </section><!--//hero-section-->
     
@@ -128,98 +130,39 @@
     
    
     
+	<div class="overlay" id="overlay">
+		<div class="popup" id="popup" style="margin: 10px;">
+			<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+			<h3>ESTÁS A UN SOLO PASO</h3>
+			<h4>Déjanos aquí tu email<span style="color:#F32A2A;"> "de las cosas importantes" </span>enviarte tu e-book</h4>
+			<!-- Begin Mailchimp Signup Form -->
+
+			<div id="mc_embed_signup">
+			<form action="https://gmail.us17.list-manage.com/subscribe/post?u=90899c83eb408771d15b3b8d6&amp;id=4a3ca3c4db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<div id="mc_embed_signup_scroll" class="contenedor-inputs">
+					<div class="mc-field-group">
+						<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Tu Nombre">
+					</div>
+					<div class="mc-field-group">
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Correo Electrónico">
+					</div>
+					
+
+				<div id="mce-responses" class="clear">
+					<div class="response" id="mce-error-response" style="display:none"></div>
+					<div class="response" id="mce-success-response" style="display:none"></div>
+				</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_90899c83eb408771d15b3b8d6_4a3ca3c4db" tabindex="-1" value=""></div>
+				<div class="clear"><input type="submit" value="CONSEGUIR eBOOK AHORA »" name="subscribe" id="mc-embedded-subscribe" class="button myButton"></div>
+				</div>
+			</form>
+			</div>
+
+<!--End mc_embed_signup-->
+		</div>
+	</div>
+    
  
-    
-    <!--<section id="reviews-section" class="reviews-section py-5">
-	    <div class="container">
-		    <h2 class="section-heading text-center">Book Reviews</h2>
-		    <div class="section-intro text-center single-col-max mx-auto mb-5">See what our readers are saying. </div>
-		    <div class="row justify-content-center">
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    
-					    <blockquote class="quote">
-					        "Excellent Book! Add your book review here consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. "     
-				        </blockquote>//item
-				        <div class="source media flex-column flex-md-row align-items-center">
-					        <img class="source-profile mr-md-3" src="assets/images/profiles/profile-1.png" alt="image" >
-					        <div class="source-info media-body text-center text-md-left">
-						        <div class="source-name">James Doe</div>
-						        <div class="soure-title">Co-Founder, Startup Week</div>
-						    </div>
-				        </div>//source-->
-				        <!--<div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div>//inner-->
-			    <!--</div>
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    <blockquote class="quote">
-					        "Great Book! Add your book review here consectetur adipiscing elit. Aliquam euismod nunc porta urna facilisis tempor. Praesent mauris neque."     
-				        </blockquote>
-				        <div class="source media flex-column flex-md-row align-items-center">
-					        <img class="source-profile mr-md-3" src="assets/images/profiles/profile-2.png" alt="image" >
-					        <div class="source-info media-body text-center text-md-left">
-						        <div class="source-name">Jean Doe</div>
-						        <div class="soure-title">Co-Founder, Company Tristique</div>
-						    </div>
-				        </div>
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div>
-			    </div>
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    <blockquote class="quote">
-					        "Excellent Book! Add your book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
-				        </blockquote>
-				        <div class="source media flex-column flex-md-row align-items-center">
-					        <img class="source-profile mr-md-3" src="assets/images/profiles/profile-3.png" alt="image" >
-					        <div class="source-info media-body text-center text-md-left">
-						        <div class="source-name">Tom Doe</div>
-						        <div class="soure-title">Product Designer, Company Lorem</div>
-						    </div>
-				        </div>
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div>
-			    </div>
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    <blockquote class="quote">
-					        "Another book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
-				        </blockquote>
-				        <div class="source media flex-column flex-md-row align-items-center">
-					        <img class="source-profile mr-md-3" src="assets/images/profiles/profile-4.png" alt="image" >
-					        <div class="source-info media-body text-center text-md-left">
-						        <div class="source-name">Alice Doe</div>
-						        <div class="soure-title">App Developer, Company Ipsum</div>
-						    </div>
-				        </div>
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div>
-			    </div>
-			    <div class="item col-12 col-lg-4 p-3 mb-4">
-				    <div class="item-inner theme-bg-light rounded p-4">
-					    <blockquote class="quote">
-					        "Another book review here consectetur adipiscing elit. Pellentesque ac leo turpis. Phasellus imperdiet id ligula tempor imperdiet."     
-				        </blockquote>
-				        <div class="source media flex-column flex-md-row align-items-center">
-					        <img class="source-profile mr-md-3" src="assets/images/profiles/profile-5.png" alt="image" >
-					        <div class="source-info media-body text-center text-md-left">
-						        <div class="source-name">Sam Doe</div>
-						        <div class="soure-title">Co-Founder, Company Integer</div>
-						    </div>
-				        </div>
-				         <div class="icon-holder"><i class="fas fa-quote-right"></i></div>
-				    </div>
-			    </div>
-		    </div>
-		    <div class="text-center">
-		        <a class="btn btn-primary" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/devbook-free-bootstrap-4-book-ebook-landing-page-template-for-developers/">Get Your Copy Today</a>
-		    </div>
-	    </div>
-    </section>-->
-    
-    
-    
     
 
     <footer class="footer">
@@ -239,7 +182,29 @@
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
     <script src="assets/plugins/jquery.scrollTo.min.js"></script>  
     <script src="assets/plugins/back-to-top.js"></script>  
-    
+    <script>
+		var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+		overlay = document.getElementById('overlay'),
+		popup = document.getElementById('popup'),
+		ccta = document.getElementById('ccta'),
+		btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+
+		btnAbrirPopup.addEventListener('click', function(){
+			overlay.classList.add('active');
+			popup.classList.add('active');
+			document.getElementById("ccta").style.display = "none";
+
+
+		});
+
+		btnCerrarPopup.addEventListener('click', function(e){
+			e.preventDefault();
+			overlay.classList.remove('active');
+			popup.classList.remove('active');
+			document.getElementById("ccta").style.display = "block";
+
+		});
+	</script>
     <script src="assets/js/main.js"></script>
 
 </body>
