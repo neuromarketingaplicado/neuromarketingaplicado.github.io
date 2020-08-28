@@ -119,7 +119,7 @@
 							    <li><i class="fas fa-check-circle mr-2"></i>La percepción de valor</li>
 								<li><i class="fas fa-check-circle mr-2"></i>El vende sin vender</li>
 						    </ul>
-						    <div class="text-center"><a class="btn btn-warning" style="color:#fff;" href="#inicio">Conseguir E-book gratuito</a></div>
+						    <div class="text-center"><button id="btn-abrir-popup2" class="btn btn-warning btn-abrir-popup" style="color:#fff;">CONSEGUIR eBOOK AHORA »</button>							</div>
 					    </div><!--//key-points-->
 					    
 				    </div><!--//col-12-->   
@@ -184,10 +184,12 @@
     <script src="assets/plugins/back-to-top.js"></script>  
     <script>
 		var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+		btnAbrirPopup2 = document.getElementById('btn-abrir-popup2'),
 		overlay = document.getElementById('overlay'),
 		popup = document.getElementById('popup'),
 		ccta = document.getElementById('ccta'),
 		btnCerrarPopup = document.getElementById('btn-cerrar-popup');
+		
 
 		btnAbrirPopup.addEventListener('click', function(){
 			overlay.classList.add('active');
@@ -202,6 +204,14 @@
 			overlay.classList.remove('active');
 			popup.classList.remove('active');
 			document.getElementById("ccta").style.display = "block";
+
+		});
+
+		btnAbrirPopup2.addEventListener('click', function(){
+			overlay.classList.add('active');
+			popup.classList.add('active');
+			document.getElementById("ccta").style.display = "none";
+
 
 		});
 	</script>
