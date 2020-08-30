@@ -47,7 +47,15 @@
             transition: all 2s ease .5s;
         }
 
+        .img-portada{
+           width: 10%; 
+        }
+
         @media (max-width: 600px) {
+            
+        .img-portada{
+           width: 60%; 
+        }
         .titulos-gracias{
             font-size: 2.5rem;
         }
@@ -90,7 +98,7 @@
                         </h2><!--//headline-->
 
                         <div class="progress">
-                            <div id="barra" class="progress-bar animacion  inicio" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div id="barra" class="progress-bar animacion  inicio" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">    </div>
                           </div>
                           <h2 class=" mb-3 text-center titulos-gracias" style="font-family: Agency FB;font-size: 25px;">
                             No olvides revisar tu bandeja de SPAM
@@ -101,7 +109,7 @@
                                 Si usas Gmail haz clic aquí y te ayudaremos
                             </h2><!--//headline-->
                          </div>
-                         <div class="text-center"><a class="btn " style="color:#fff;background: #000000;" href="#inicio">Conseguir E-book gratuito</a></div>
+                         <div class="text-center"><a class="btn " style="color:#fff;background: #000000;" href="#inicio">BUSCA NUESTRO CORREO EN TU MAIL <i class="fa fa-chevron-right"></i></a></div>
 					    
 					    
 				    </div><!--//promo-->
@@ -114,9 +122,9 @@
 
     <footer class="footer" style="background: #000000;">
 
-	    <div class="footer-bottom text-center py-5 d-flex justify-content-center align-items-center mx-4">
+	    <div class="footer-bottom text-center py-5 d-flex justify-content-center align-items-center mx-4 flex-wrap">
 
-            <img src="assets/images/devbookcover.png" width="10%">
+            <img src="assets/images/devbookcover.png" class="img-portada">
             <h2 class="titulos-libro mx-4"  style="font-family: Agency FB;color:#fff;">Mejorar tus ventas con estos 7 consejso de neuromarketing</h2>
  
 	    </div>

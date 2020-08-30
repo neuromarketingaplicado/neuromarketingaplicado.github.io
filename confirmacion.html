@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"> 
 <head>
-    <title>DevBook - Bootstrap 4 Book/eBook Landing Page Template For Developers</title>
+    <title>ebook - Gracias</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
@@ -19,55 +19,126 @@
 
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+    <script>
+        function animar (){
+            document.getElementById("barra").classList.toggle("final")
+        }
+
+        setTimeout('animar()',5);
+    </script>
+    <style>
+        .titulos-gracias{
+            font-size: 2.5rem;
+        }
+
+        .titulos-libro{
+            font-size: 2.5rem;
+        }
+
+        .inicio{
+            width: 0%;
+        }
+
+        .final{
+            width: 70%;
+        }
+
+        .animacion{
+            transition: all 2s ease .5s;
+        }
+
+        .img-portada{
+           width: 10%; 
+        }
+
+        .text-ada{
+            width: 54%;
+        }
+        
+        
+
+        @media(max-width: 768px){
+            .img-adap{
+                width: 100%;
+            }
+            .text-ada{
+            width: 100%;
+        }
+        }
+
+        @media (max-width: 600px) {
+        
+
+        .img-portada{
+           width: 60%; 
+        }
+        .titulos-gracias{
+            font-size: 2.5rem;
+        }
+
+        .titulos-libro{
+            font-size: 1.5rem;
+        }
+
+        .text-ada{
+            width: 100%;
+        }
+        }
+
+        
+        
+    </style>
 	
 </head> 
 
-<body>    
-    <header class="header">	    
-        <div class="branding">
-            <div class="container-fluid position-relative py-3">
-                <div class="logo-wrapper text-center">
-	                <div class="site-logo"><a class="navbar-brand" href="confirmacion.html"><img class="logo-icon mr-2" src="assets/images/site-logo.svg" width="50px" alt="logo" ><span class="logo-text">Neuromarketing Aplicado</span></a></div>    
+<body style="background: #000000;">    
+    <header class="header" >	    
+        <div class="branding" style="background:#000;">
+            <div class="container-fluid position-relative py-1">
+                <div class="logo-wrapper ">
+	                <div class="site-logo"><a class="navbar-brand" href="gracias.html"><img class="logo-icon mr-2" src="assets/images/icono_1.ico" width="50px" alt="logo" ><span class="logo-text" >Neuromarketing Aplicado</span></a></div>    
                 </div><!--//docs-logo-wrapper-->
 	        
             </div><!--//container-->
         </div><!--//branding-->
     </header><!--//header-->
     
-    <section class="hero-section" id="inicio" >
+    <section class="hero-section"style="background:#fff;">
 	    <div class="container">
-			<h1 class="headline mb-3 text-center">
-                Listo, aquí esta tu e-book Gratis
-         </h1><!--//headline-->
-            
-		    <div class="row">
-			    <div class="col-12 col-md-6 py-3  align-self-baseline">
-				    <div class="promo pr-md-3 pr-lg-5">
-                        <div class="cta-holder" style="display: flex;justify-content: center;">
-                            <div class="book-cover-holder">
-                                <img class="img-fluid book-cover" src="assets/images/devbook-cover.png" alt="book cover" width="300px">
-                                <div class="book-badge d-inline-block shadow">
-                                    <br>PDF
-                                </div>
-                            </div><!--//book-cover-holder-->					    
-                        </div><!--//cta-holder-->
-                        <a href="#" class="btn btn-danger w-100 my-3">Descargar PDF</a>
+			<h1 class=" mb-3 text-center titulos-gracias" style="font-family: Agency FB;">
+                ¿Listo para ser un gran vendedor?
+			</h1><!--//headline-->
+			<h1 class=" mb-3 text-center titulos-gracias" style="font-family: Agency FB;">
+                El ebook está llegando a tu bandeja de entrada
+			</h1><!--//headline-->
 
+		    <div class="row">
+			    <div class="col-12 col-md-12 py-3  align-self-baseline">
+				    <div class="promo ">
+                        <div class="d-flex flex-row flex-wrap">
+                            <div style="text-align: center;"  class="img-adap">
+                                <img src="assets/images/gracias.png" alt="" srcset="" width="70%"> 
+                            </div>
+                            <div class="text-ada">  
+                                <p style="font-size: 20px;">
+                                   <b>¡Importante! El nombre del correo que recibirás</b> es “Tu descarga con los 7 consejos para vender mas con el NeuroMakering”. Si no aparece en tu bandeja de entrada busca en la carpeta de correo no deseado o en Promociones y arrastra el correo a tu bandeja principal.
+                                    <br>
+                                    <br>
+                                   <b>¿No llega?</b> Escríbenos a <b>3005424565</b> para poder ayudarte. Indica a mi equipo el correo con el que te has registrado y lo solucionaremos en seguida.    
+                                </p>                              
+                            </div>
+                        </div>                       
+                          
+                         <div style="display: flex;justify-content:center;align-items:center ;">
+                             <img src="assets/images/gmail.png" style="width: 40px;height: 40px;">
+                             <h2 class=" text-center titulos-gracias" style="font-family: Agency FB;font-size: 25px;margin-bottom: 0;">
+                                Si usas Gmail haz clic aquí y te ayudaremos
+                            </h2><!--//headline-->
+                         </div>
+                         <div class="text-center"><a class="btn " style="color:#fff;background: #ffaa00;" href="#inicio">Conseguir E-book gratuito</a></div>
+					    
 					    
 				    </div><!--//promo-->
-                </div><!--col-->
-                
-			    <div class="col-12 col-md-6 mb-5 align-self-center">
-                    <div class="cta-holder" style="display: flex;justify-content: center;">
-                        <div class="book-cover-holder">
-                            <img class="img-fluid book-cover" src="assets/images/devbook-cover.png" alt="book cover" width="300px">
-                            <div class="book-badge d-inline-block shadow">
-                                <br>EPUB
-                            </div>
-                        </div><!--//book-cover-holder-->					    
-                    </div><!--//cta-holder-->
-                    <a href="#" class="btn btn-success w-100 my-1 ">Descargar EPUB</a>
-
 			    </div><!--col-->
 		    </div><!--//row-->
 	    </div><!--//container-->
@@ -75,17 +146,16 @@
     
 
 
-    <footer class="footer">
+    <footer class="footer" style="background: #000000;">
 
-	    <div class="footer-bottom text-center py-5">
+	    <div class="footer-bottom text-center py-5 d-flex justify-content-center align-items-center mx-4">
 
-	        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-            <small class="copyright">Creado <i class="fas fa-heart" style="color: #fb866a;"></i> por <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank"></a> Neuromarketing Aplicado</small>
+            <h2 class="titulos-libro mx-4"  style="font-family: Agency FB;color:#fff;">Copyright © 2020 NeuroMarketingAplicativo · Aviso legal · Política de privacidad</h2>
  
 	    </div>
 	    
     </footer>
-       
+        
     <!-- Javascript -->          
     <script src="assets/plugins/jquery-3.4.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script>
